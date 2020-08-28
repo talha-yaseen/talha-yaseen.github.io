@@ -5,8 +5,15 @@
 		<!-- Include Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!-- Include Fontawesome -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 		<!-- Include jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Include Animate.css (for animations) -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 
 		<!-- Custom Styling -->
 		<style>
@@ -35,10 +42,14 @@
 				text-align: center;
 			}
 
-			#section-intro h1, h2 {
+			#section-intro i.fa {
+				cursor: pointer;
+			}
+
+			#section-intro > div {
 				position: relative;
 				margin-top: 0;
-				top: 50%;
+				top: 40%;
 			}
 
 			.portfolio-item {
@@ -76,10 +87,13 @@
 	<body>
 
 		<section id="section-intro">
-			<h1>Hi, I'm Talha Yaseen!</h1>
-			<h2>Scroll down to see some of my work</h2>
+			<div>
+				<h1>Hi, I'm Talha Yaseen!</h1>
+				<h2>Scroll down to see some of my work</h2>
+				<i class="fa fa-arrow-down fa-4x animate__animated animate__bounce animate__infinite"></i>
+			</div>
 		</section>
-		<div class="container">
+		<div class="container" id="content">
 			<div class="row">
 				<div class="col">
 					<h3>Here are some websites I've designed</h3>
@@ -131,11 +145,22 @@
 		
 		<!-- Custom Styling Scripts -->
 		<script>
+			// Full-height section
 			$('#section-intro').height($(window).height());
+
+			// Vertically center the contents of the intro section
 			var introHeight = $('#section-intro').height();
+			var introDivHeight = $('#section-intro > div').height();
+			var topPos = (introHeight - introDivHeight) / 2;
+			$('#section-intro > div').css('top', topPos + 'px');
+
+			// Hide animated elements
 			$('#section-intro h1').hide();
 			$('#section-intro h2').hide();
+			$('#section-intro i.fa').hide();
 
+
+			// Custom function for animating each individual character in a string of text
 			function animatedEntry(element) {
 				let chars = $(element).text().split('').map(function(x) {return '<span>' + x + '</span>'});
 				$(element).html(chars.join(''));
@@ -150,11 +175,21 @@
 						clearInterval(interval);
 						setTimeout(function() {
 							$('#section-intro h2').slideToggle();
+								setTimeout(function() {
+								$('#section-intro i.fa').fadeToggle();
+								}, 500);
 						}, 1000);
 					}
 				},100);
 				
 			}
+
+			// Scroll down when the user clicks on the down arrow
+			$("#section-intro i.fa").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $("#content").offset().top
+			    }, 1000);
+			});
 
 			$(function() {
 				animatedEntry('#section-intro h1');
