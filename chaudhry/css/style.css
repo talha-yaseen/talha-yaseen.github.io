@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Vollkorn');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Vollkorn';
+}
+
+section {
+	background: black;
+	color: white;
+	padding: 0.5em;
+}
+
+a {
+	text-decoration: none;
+	transition: 0.5s ease all;
+}
+
+a.btn {
+	display: inline-block;
+}
+
+h1,h2,h3 {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Lato';
+}
+
+h1 {
+	font-size: 500%;
+	font-weight: 900;
+	letter-spacing: 5px;
+}
+
+h2 {
+	font-size: 200%;
+	color: #f2571f;
+}
+
+h3 {
+	color: #f2571f;
+}
+
+hr {
+	border: none;
+	border-bottom: 5px solid #f2571f;
+	width: 30%;
+	margin-left: 2em;
+	margin-top: 0;
+	display: inline-block;
+}
+
+button,input[type=submit],a.btn {
+	text-transform: uppercase;
+	font-family: 'Lato';
+	background: none;
+	border-radius: 0.5em;
+	color: #f2571f;
+	border: 2px solid #f2571f;
+	font-size: 110%;
+	padding: 0.5em 2em;
+	transition: 0.5s ease all;
+}
+
+button:hover,input[type=submit]:hover,a.btn:hover {
+	background: #f2571f;
+	color: white;
+}
+
+input[type=number]
+{
+	font-size: 105%;
+	margin-bottom: 2em;
+	border: 2px solid black;
+	padding: 0.3em;
+	border-radius: 0.5em;
+	margin-left: 0.5em;
+}
+
+#mainIntro {
+	min-height: 600px;
+	background: url('http://www.lennartandreas.com/wp-content/uploads/2017/12/20171129_123552_G0013728.jpg') center center fixed;
+	background: url('../motorcycle.jpg') center center fixed;
+	
+}
+
+#mainIntro > h1 {
+	position: relative;
+	margin-top: 0;
+	top: 220px;
+	//text-shadow: 1px 1px 2px black;
+	font-weight: bold;
+}
+
+#navbar {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#navbar ul {
+	list-style-type: none;
+	font-family: 'Lato';
+}
+
+#navbar ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0.3em 1em;
+}
+
+#navbar a {
+	text-decoration: none;
+	color: white;
+}
+
+#navbar a:hover {
+	color: #f2571f;
+}
+
+#navbar .active {
+	color: #f2571f;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.light {
+	background: white;
+	color: black;
+}
+
+.light h3 {
+	color: black;
+}
+
+.two-column {
+	display: flex;
+}
+
+.two-column > div {
+	width: 50%;
+}
+
+#latest .two-column {
+	width: 90%;
+}
+
+#merchandise {
+	text-align: center;
+}
+
+.merchandise-container {
+	margin-top: 3em;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.merchandise-container > div {
+	width: 30%;
+}
+
+.motorcycles > div {
+	width: 40%;
+	margin-bottom: 2em;
+}
+
+.merchandise-container > div img {
+	max-width: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #f2571f;
+	transition: 0.5s ease all;
+}
+
+.merchandise-container > div img:hover {
+	transform: scale(1.5);
+}
+
+.motorcycles > div img {
+	max-width: 400px;
+}
+
+h3.price {
+	color: white;
+	font-size: 170%;
+	margin-top: 0;
+}
+
+#video {
+	min-height: 500px;
+}
+
+#video img {
+	width: 100vw; height: 100vh; object-fit: cover;
+}
+
+h2.subheading {
+	text-align: left;
+	color: white;
+	margin-left: 2em;
+	margin-top: 3em;
+}
+
+.light .subheading {
+	color: black;
+}
+
+#product-info .two-column {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+#product-info .two-column img {
+	max-width: 400px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#product-info #price {
+	font-size: 180%;
+	text-align: left;
+	/*display: inline-block;
+	background: #f2571f;
+	color: white;
+	padding: 0.2em;
+	margin-top: 0.5em;*/
+}
+
+#product-description {
+	padding: 1em 3em;
+}
+
+#product-description h3 {
+	text-align: left;
+	color: #f2571f;
+	margin-top: 2em;
+}
+
+#product-description ul {
+	width: 60%;
+}
+
+#cart {
+	margin: 4em auto 2em;
+	text-align: left;
+}
+
+#cart th {
+	font-family: 'Lato';
+	text-transform: uppercase;
+}
+
+#cart td,th {
+	padding: 0.7em 1.5em;
+}
+
+#cart .total
+{
+	font-weight: bold;
+	font-size: 110%;
+	text-align: right;
+}
+
+#booking-section {
+	background: url('../cafe-racer.jpg') top center fixed;
+	
+}
+
+.booking-form {
+	margin: 1em auto;
+	background: #f2571f;
+	color: white;
+	border-radius: 1em;
+	padding: 2em;
+}
+
+.booking-form input[type=submit]
+{
+	color: white;
+	border-color: white;
+}
+
+.booking-form input[type=submit]:hover
+{
+	background: white;
+	color: black;
+}
+
+.booking-form td {
+	padding: 0.5em 1em;
+	text-align: left;
+}
+
+.booking-form td:nth-of-type(1) {
+	text-align: right;
+}
+
+.booking-form tr:last-of-type td {
+	text-align: center;
+}
+
+.motorcycleIntro {
+	height: 100vh;
+}
+
+.motorcycleIntro > h1 {
+	position: relative;
+	top: 25%;
+	font-weight: lighter;
+	text-shadow: 1px 1px 2px black;
+}
+
+.bmw {
+	background: url('https://cdn-images-1.medium.com/max/2400/1*3DxWGsZneJm8tnh2ieg6ag.jpeg') fixed;
+	background-size: cover;
+}
+
+.triumph {
+	background: url('https://cdnmedia.endeavorsuite.com/images/catalogs/18027/products/detail/1c888744-42f0-4e9b-890c-96f2945c1379.jpg');
+	background-size: cover;
+}
+
+.suzuki {
+	background: url('https://canberramcc.com.au/wp-content/uploads/2017/11/VZR1800BZL8_BOUL_action_1_1511907328.jpg');
+	background-size: cover;
+}
+
+.ktm {
+	background: url('https://wallpapercave.com/wp/wp2212178.jpg');
+	background-size: cover;
+}
+
+.moto-info > p {
+	padding: 1em 2em;
+}
+
+.moto-info > div {
+	margin: 8em auto;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.moto-info > div > div {
+	width: 45%;
+}
+
+.moto-info > div > div > img {
+	max-width: 300px;
+	margin-top: 2em;
+}
+
+.moto-info > div h2 {
+	text-transform: none;
+	text-align: left;
+}

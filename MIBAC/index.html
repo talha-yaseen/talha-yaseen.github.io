@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<title>MIBAC &#39;17</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" href="css/my-fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body>
+
+		<div id="navbar">
+			<img id="logo" src="img/logo.png">
+			<div id="nav">
+				<ul id="nav-ul">
+					<li><a class="active" href="index.html">Home</a></li>
+					<li><a href="index.html#committees">Committees</a></li>
+					<li><a href="team.html">Host Team</a></li>
+					<li><a href="social-events.html">Social Events</a></li>
+					<li><a href="register.html">Register</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="main">
+			<div id="main-logo">
+				<img src="img/logo.png">
+				<h1>13 - 15 January &#39;17</h1>
+			</div>
+		</div>
+		<div class="container purple">
+			<div id="clockdiv">
+				  <div>
+				    <span class="days"></span>
+				    <div class="smalltext">Days</div>
+				  </div>
+				  <div>
+				    <span class="hours"></span>
+				    <div class="smalltext">Hours</div>
+				  </div>
+				  <div>
+				    <span class="minutes"></span>
+				    <div class="smalltext">Minutes</div>
+				  </div>
+				  <div>
+				    <span class="seconds"></span>
+				    <div class="smalltext">Seconds</div>
+				  </div>
+			</div>
+		</div>
+		<div class="container white">
+			<h2>What is MIBAC?</h2>
+			<p>71 years under the UN charter, the world is yet to achieve &quot;Global Peace&quot;. Why? Is it because the UN has not emphasized the need for achievement of peace enough, or is it because they do not follow what they endorse? Yes we talk about how countries need to change the ways they run, but the practical steps are missed out from the meetings.</p><p>MIBAC, Margalla International Baccalaureate Academic Conference, is an academic conference aiming to provide a platform to young diplomats. The purpose of the conference is to challenge and inspire the youth to bring forth change in the world. By providing an intellectually engaging environment, delegates will be encouraged to come up with diplomatic solutions to problems we face as an international community and their further implications onto individual nations.</p><p>Our journey began back in June of this year. After having been to a plethora of MUN conferences in the last couple of years, we had seen the best, the worst, and just average of conferences in the twin cities and elsewhere. We had seen the development of MUN conferences from a simulation of the actual United Nations to a mere social event. From then on we were set for a mission to revolutionize or somewhat back track MUN conferences, and bring them back to the goal they were intended to achieve--raise minds to be the ideology behind change. Our definition of change is not making masses change their ideology spontaneously, it is rather mending our own ways to inspire those around us. Change begins with ourselves, and we are who need most of the fixing.</p>
+		</div>
+		<div id="committees" class="container purple">
+			<h2>Committees</h2>
+			<div id="committees-container">
+				<div>
+					<div>
+						<h2><a href="committee.html">United Nations Security Council</a></h2>
+					</div>
+					<div>
+						<h2><a href="committee.html">Pakistan National Assembly</a></h2>
+					</div>
+				</div>
+				<div>
+					<div>
+						<h2><a href="committee.html">Disarmament and International Security Committee</a></h2>
+					</div>
+					<div>
+						<h2><a href="committee.html">Social, Humanitarian and Cultural Committee</a></h2>
+					</div>
+				</div>
+				<div>
+					<div>
+						<h2><a href="committee.html">International Crisis Ad-Hoc Cell</a></h2>
+					</div>
+					<div>
+						<h2><a href="committee.html">United Nations Environment Programme</a></h2>
+					</div>
+				</div>
+				<div>
+					<div>
+						<h2><a href="committee.html">International Court of Justice</a></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact" class="container purple">
+			<h2>Contact Us</h2>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.047977758152!2d73.0636110145821!3d33.681821844608045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfe03920587b%3A0x1086b40e7370f62f!2sBeaconhouse+Margalla+Campus!5e0!3m2!1sen!2s!4v1479210151263" height="450" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div>
+				<p>Secretary General<br>Ahsan Sarwar<br>0300-9191797</p><p>Under Secretary General<br>Furqan Hafeez<br>0334-9595148</p><p>Chief of Staff<br>Anmol Zafar<br>0334-5444806</p><p>Treasurer<br>Yahya Assad Rana<br>0304-9417583</p>
+			</div>
+		</div>
+
+<script type="text/javascript">
+	function getTimeRemaining(endtime) {
+	  var t = Date.parse(endtime) - Date.parse(new Date());
+	  var seconds = Math.floor((t / 1000) % 60);
+	  var minutes = Math.floor((t / 1000 / 60) % 60);
+	  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+	  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+	  return {
+	    'total': t,
+	    'days': days,
+	    'hours': hours,
+	    'minutes': minutes,
+	    'seconds': seconds
+	  };
+	}
+
+	function initializeClock(id, endtime) {
+	  var clock = document.getElementById(id);
+	  var daysSpan = clock.querySelector('.days');
+	  var hoursSpan = clock.querySelector('.hours');
+	  var minutesSpan = clock.querySelector('.minutes');
+	  var secondsSpan = clock.querySelector('.seconds');
+
+	  function updateClock() {
+	    var t = getTimeRemaining(endtime);
+
+	    daysSpan.innerHTML = t.days;
+	    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+	    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+	    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+	    if (t.total <= 0) {
+	      clearInterval(timeinterval);
+	    }
+	  }
+
+	  updateClock();
+	  var timeinterval = setInterval(updateClock, 1000);
+	}
+
+	var deadline = new Date(Date.parse(new Date("13 Jan 2017 03:00 PM")));
+	initializeClock('clockdiv', deadline);
+</script>
+<div id="footer">
+			Copyright &copy; MIBAC 2017 - All Rights Reserved | Designed by Talha Yaseen
+		</div>
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/selectnav.min.js"></script>
+	<script>selectnav('nav-ul'); </script>
+	</body>
+</html>
