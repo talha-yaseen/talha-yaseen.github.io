@@ -1,14 +1,43 @@
+<!doctype html>
 <html>
 	<head>
 		<title>Talha Yaseen</title>
 		<!-- Include Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- Include jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 		<!-- Custom Styling -->
 		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+
+			section {
+				border: 1px solid rgba(0,0,0,0);
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				font-family: 'Raleway';
+			}
 			h1 {
 				text-align: center;
+				font-family: 'Raleway';
+				font-size: 500%;
+			}
+
+			h3, h4 {
+				font-weight: 700;
+			}
+
+			#section-intro {
+				background: maroon;
+				color: white;
+			}
+
+			#section-intro h1 {
+				position: relative;
+				margin-top: 0;
+				top: 50%;
 			}
 
 			.portfolio-item {
@@ -32,16 +61,26 @@
 				padding: 0.25em 2em;
 			}
 
+			footer {
+				background: black;
+				color: white;
+				border: 1px solid rgba(0,0,0,0);
+				padding-bottom: 1em;
+				text-align: center;
+			}
+
 		</style>
 	</head>
 
 	<body>
+
+		<section id="section-intro">
+			<h1>Hi, I'm Talha Yaseen!</h1>
+		</section>
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h1>Hi, I'm Talha Yaseen!</h1>
-					<hr />
-					<h3>Here are some website I've designed</h3>
+					<h3>Here are some websites I've designed</h3>
 					<p>These do not include Wordpress websites because Github Pages only allows me to upload static HTML websites.</p>
 					<p>All of these websites were designed from scratch using HTML/CSS/Javascript/PHP. Occasionally, some Javascript libraries were used for animations and slideshows.</p>
 					<p>Some functionalities had to be removed while uploading these websites as Github Pages does not recognise PHP code.</p>
@@ -83,6 +122,22 @@
 				</div>
 			</div>
 		</div>
+
+		<footer>
+			<h4>For work, drop me an email at talha936@live.com</h4>
+		</footer>
 		
+		<!-- Custom Styling Scripts -->
+		<script>
+			$('#section-intro').height($(window).height());
+			var introHeight = $('#section-intro').height();
+			$('#section-intro h1').hide();
+
+			$(function() {
+				setTimeout(function() {
+					$('#section-intro h1').fadeIn('slow');}
+					, 1500);
+			})
+		</script>
 	</body>
 </html>
