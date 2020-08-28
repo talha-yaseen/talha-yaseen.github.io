@@ -32,9 +32,10 @@
 			#section-intro {
 				background: maroon;
 				color: white;
+				text-align: center;
 			}
 
-			#section-intro h1 {
+			#section-intro h1, h2 {
 				position: relative;
 				margin-top: 0;
 				top: 50%;
@@ -76,6 +77,7 @@
 
 		<section id="section-intro">
 			<h1>Hi, I'm Talha Yaseen!</h1>
+			<h2>Scroll down to see some of my work</h2>
 		</section>
 		<div class="container">
 			<div class="row">
@@ -132,11 +134,30 @@
 			$('#section-intro').height($(window).height());
 			var introHeight = $('#section-intro').height();
 			$('#section-intro h1').hide();
+			$('#section-intro h2').hide();
+
+			function animatedEntry(element) {
+				let chars = $(element).text().split('').map(function(x) {return '<span>' + x + '</span>'});
+				$(element).html(chars.join(''));
+				$(element + ' span').hide();
+				$(element).show();
+				let items = $(element + ' span').length;
+				let i = 0;
+				let interval = setInterval(function() {
+					$(element + ' span').eq(i).fadeIn();
+					i++;
+					if (i == items) {
+						clearInterval(interval);
+						setTimeout(function() {
+							$('#section-intro h2').slideToggle();
+						}, 1000);
+					}
+				},100);
+				
+			}
 
 			$(function() {
-				setTimeout(function() {
-					$('#section-intro h1').fadeIn('slow');}
-					, 1500);
+				animatedEntry('#section-intro h1');
 			})
 		</script>
 	</body>
