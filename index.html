@@ -1,256 +1,369 @@
 <!doctype html>
 <html>
-	<head>
-		<title>Talha Yaseen</title>
 
-		<!-- For Mobile Devices -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Talha Yaseen</title>
 
-		<!-- Include Bootstrap -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- For Mobile Devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Include Fontawesome -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Include jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-		<!-- Include jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Include Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
 
-		<!-- Include Animate.css (for animations) -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+	<!-- Include Fontawesome -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-		<!-- Custom Styling -->
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
+	<!-- Include Animate.css (for animations) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 
-			body, html {
-				overflow-x: hidden;
-			}
+	<!-- Custom Styling -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap');
 
-			section {
-				border: 1px solid rgba(0,0,0,0);
-			}
+		body,
+		html {
+			overflow-x: hidden;
+		}
 
-			h1, h2, h3, h4, h5, h6 {
-				font-family: 'Raleway';
-			}
-			h1 {
-				text-align: center;
-				font-family: 'Raleway';
-				font-size: 500%;
-			}
+		section {
+			border: 1px solid rgba(0, 0, 0, 0);
+		}
 
-			h3, h4 {
-				font-weight: 700;
-			}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'Raleway';
+		}
 
-			#section-intro {
-				background: maroon;
-				color: white;
-				text-align: center;
-			}
+		h1 {
+			text-align: center;
+			font-family: 'Raleway';
+			font-size: 500%;
+		}
 
-			#section-intro i.fa {
-				cursor: pointer;
-			}
+		h3,
+		h4 {
+			font-weight: 700;
+		}
 
-			#section-intro > div {
-				position: relative;
-				margin-top: 0;
-				top: 40%;
-			}
+		#section-intro {
+			background: maroon;
+			color: white;
+			text-align: center;
+		}
 
-			#content {
-				padding: 1em 2em;
-			}
+		#section-intro i.fa {
+			cursor: pointer;
+		}
 
-			.portfolio-item {
-				text-align: center;
-				//background: #d3d3d3;
-				border-radius: 20px;
-				padding: 2em;
-			}
+		#section-intro>div {
+			position: relative;
+			margin-top: 0;
+			top: 40%;
+		}
 
-			.portfolio-item img {
-				max-width: 300px;
-				transition: 0.3s ease all;
-			}
+		#content {
+			padding: 1em 2em;
+		}
 
-			.portfolio-item img:hover {
-				transform: scale(1.2);
-			}
+		.portfolio-item {
+			text-align: center;
+			border-radius: 20px;
+			padding: 2em;
+		}
 
-			.portfolio-item > p {
-				text-align: left;
-				padding: 0.25em 2em;
-			}
+		.portfolio-item img {
+			max-width: 300px;
+			transition: 0.3s ease all;
+		}
 
-			footer {
-				background: black;
-				color: white;
-				border: 1px solid rgba(0,0,0,0);
-				padding-bottom: 1em;
-				text-align: center;
-			}
+		.portfolio-item img:hover {
+			transform: scale(1.2);
+		}
 
-		</style>
-	</head>
+		.portfolio-item>p {
+			text-align: left;
+			padding: 0.25em 2em;
+		}
 
-	<body>
+		.document-scanner-screenshots {
+			margin-bottom: 2.5em;
+		}
 
-		<section id="section-intro">
-			<div>
-				<h1>Hi, I'm Talha Yaseen!</h1>
-				<h2>Scroll down to see some of my work</h2>
-				<i class="fa fa-arrow-down fa-4x animate__animated animate__bounce animate__infinite"></i>
-			</div>
-		</section>
-		<div class="container" id="content">
-			<div class="row">
-				<div class="col">
-					<h3>Here are some websites I've designed/developed</h3>
-					<p>These do not include Wordpress websites because Github Pages only allows me to upload static HTML websites.</p>
-					<p>All of these websites were designed from scratch using HTML/CSS/Javascript/PHP. Occasionally, some Javascript libraries were used for animations and slideshows.</p>
-					<p>Some functionalities had to be removed while uploading these websites as Github Pages does not recognise PHP code.</p>
-					<div class="row">
-						<div class="col">
-							<h3 style="margin-top: 2em">Active Websites</h3>
-							<div class="row" style="margin-top: 2em">
-								<div class="col-md-4 portfolio-item">
-									<a href="https://codefest.io/"><img src="thumbs/thumb-codefest.jpg" /></a>
-									<h4>Code Fest</h4>
-									<h5>October 2021</h5>
-									<p>This is a coding platform that I worked on while employed at <a href="https://pk.linkedin.com/company/thegapdynamics">Gap Dynamics GmbH.</a> I built this with Next.js, a popular React framework.</p>
-								</div>
-								<div class="col-md-4 portfolio-item">
-									<a href="https://dgtlnetwork.com/"><img src="thumbs/thumb-dgtl.jpg" /></a>
-									<h4>DGTL Network</h4>
-									<h5>January 2022</h5>
-									<p>A website for a digital marketing agency. I built this in Wordpress.</p>
-								</div>
-								<div class="col-md-4 portfolio-item">
-									<a href="https://hms.gap-dynamics.com/"><img src="thumbs/thumb-hms.jpg" /></a>
-									<h4>Elite Hospital Sohar</h4>
-									<h5>January 2022</h5>
-									<p>A website for a hospital in Oman that allows visitors to book appointments online. This was built in Wordpress.</p>
-								</div>
+		.document-scanner-screenshots>div {
+			text-align: center;
+		}
+
+		.document-scanner-screenshots .screenshot {
+			max-width: 200px;
+		}
+
+		footer {
+			background: black;
+			color: white;
+			border: 1px solid rgba(0, 0, 0, 0);
+			padding-bottom: 1em;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+
+	<section id="section-intro">
+		<div>
+			<h1>Hi, I'm Talha Yaseen!</h1>
+			<h2>Scroll down to see some of my work</h2>
+			<i class="fa fa-arrow-down fa-4x animate__animated animate__bounce animate__infinite"></i>
+		</div>
+	</section>
+	<div class="container" id="content">
+		<div class="row">
+			<div class="col">
+				<h3>Here are some websites I've designed/developed</h3>
+				<p>These do not include Wordpress websites because Github Pages only allows me to upload static HTML
+					websites.</p>
+				<p>All of these websites were designed from scratch using HTML/CSS/Javascript/PHP. Occasionally, some
+					Javascript libraries were used for animations and slideshows.</p>
+				<p>Some functionalities had to be removed while uploading these websites as Github Pages does not
+					recognise PHP code.</p>
+				<div class="row">
+					<div class="col">
+						<h3 style="margin-top: 2em">Active Websites</h3>
+						<div class="row" style="margin-top: 2em">
+							<div class="col-md-4 portfolio-item">
+								<a href="https://codefest.io/"><img src="thumbs/thumb-codefest.jpg" /></a>
+								<h4>Code Fest</h4>
+								<h5>October 2021</h5>
+								<p>This is a coding platform that I worked on while employed at <a
+										href="https://pk.linkedin.com/company/thegapdynamics">Gap Dynamics GmbH.</a> I
+									built this with Next.js, a popular React framework.</p>
 							</div>
-							<div class="row" style="margin-top: 2em">
-								<div class="col-md-4 portfolio-item">
-									<a href="https://hanifmedical.com/"><img src="thumbs/thumb-hanif.jpg" /></a>
-									<h4>Hanif Medical Complex</h4>
-									<h5>November 2020</h5>
-									<p>A relatively simple website for a hospital in Pakistan, built in Wordpress.</p>
-								</div>
+							<div class="col-md-4 portfolio-item">
+								<a href="https://dgtlnetwork.com/"><img src="thumbs/thumb-dgtl.jpg" /></a>
+								<h4>DGTL Network</h4>
+								<h5>January 2022</h5>
+								<p>A website for a digital marketing agency. I built this in Wordpress.</p>
+							</div>
+							<div class="col-md-4 portfolio-item">
+								<a href="https://hms.gap-dynamics.com/"><img src="thumbs/thumb-hms.jpg" /></a>
+								<h4>Elite Hospital Sohar</h4>
+								<h5>January 2022</h5>
+								<p>A website for a hospital in Oman that allows visitors to book appointments online.
+									This was built in Wordpress.</p>
 							</div>
 						</div>
-					</div>
-					<h3 style="margin-top: 2em">Inactive Websites</h3>
-					<div class="row" style="margin-top: 1em">
-						<div class="col-md-4 portfolio-item">
-							<a href="BMIDC/index.html"><img src="thumbs/thumb-bmidc.jpg" /></a>
-							<h4>BMIDC 2015</h4>
-							<h5>December 2014</h5>
-							<p>My first website. I made this for a national event held at my school.
-							<br /><strong>Note:</strong> I didn't know how to use media queries back then, so this site is not very mobile-friendly.</p>
-						</div>
-						<div class="col-md-4 portfolio-item">
-							<a href="MIBAC/index.html"><img src="thumbs/thumb-mibac.jpg" /></a>
-							<h4>MIBAC 2017</h4>
-							<h5>December 2016</h5>
-							<p>I made this for an event at my school.</p>
-						</div>
-						<div class="col-md-4 portfolio-item">
-							<a href="graffiti/index.html"><img src="thumbs/thumb-graffiti.jpg" /></a>
-							<h4>LGS Graffiti 2017</h4>
-							<h5>February 2017</h5>
-							<p>I made this website for a private event.</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 portfolio-item">
-							<a href="quicktaxi/index.html"><img src="thumbs/thumb-quicktaxi.jpg" /></a>
-							<h4>Quicktaxi</h4>
-							<h5>February 2019</h5>
-							<p>I made this website for a friend who just needed a rough layout.</p>
-						</div>
-						<div class="col-md-4 portfolio-item">
-							<a href="chaudhry/index.html"><img src="thumbs/thumb-chaudhry.jpg" /></a>
-							<h4>Chaudhry Motors</h4>
-							<h5>May 2019</h5>
-							<p>This was my end-of-semester project for Web Engineering in Spring 2019.</p>
-						</div>
-					</div>
-					<h3 style="margin-top: 2em">Other Goodies</h3>
-					<div class="row" style="margin-top: 1em">
-						<div class="col-md-4 portfolio-item">
-							<a href="scripts/highlights.py"><img src="thumbs/thumb-kindle-script.jpg" /></a>
-							<h4>Kindle Highlights HTML Generator</h4>
-							<h5>December 2019</h5>
-							<p>I own a Kindle Paperwhite and one of the best things about it is how it conveniently stores all your highlighted passages in a single .txt file. The problem is, reading .txt files can sometimes be a headache, so I wrote this Python script that converts the .txt file into a simple but neatly formatted HTML file with bulleted lists.</p>
-							<p>I'm sure Kindle users can relate to this: sometimes while trying to highlight a passage we accidentally end up highlighting more (or less) than the actual passage and have to undo our highlight and try again. These accidental highlights, though, also get added to the .txt file, which can thus contain a lot of duplicate entries. To remove these duplicate entries from the HTML file generated, I used the SequenceMatcher class in Python's difflib library, which ignores highlighted passages that have a similary index of more than 50%.</p>
-							<p>Usage: copy your <tt>'My Clippings.txt'</tt> from your Kindle and place it in the same directory as this script. Then, run it. The result will be stored in a file named <tt>'highlights.html'</tt></p>
+						<div class="row" style="margin-top: 2em">
+							<div class="col-md-4 portfolio-item">
+								<a href="https://hanifmedical.com/"><img src="thumbs/thumb-hanif.jpg" /></a>
+								<h4>Hanif Medical Complex</h4>
+								<h5>November 2020</h5>
+								<p>A relatively simple website for a hospital in Pakistan, built in Wordpress.</p>
+							</div>
 						</div>
 					</div>
 				</div>
+				<h3 style="margin-top: 2em">Inactive Websites</h3>
+				<div class="row" style="margin-top: 1em">
+					<div class="col-md-4 portfolio-item">
+						<a href="BMIDC/index.html"><img src="thumbs/thumb-bmidc.jpg" /></a>
+						<h4>BMIDC 2015</h4>
+						<h5>December 2014</h5>
+						<p>My first website. I made this for a national event held at my school.
+							<br /><strong>Note:</strong> I didn't know how to use media queries back then, so this site
+							is not very mobile-friendly.
+						</p>
+					</div>
+					<div class="col-md-4 portfolio-item">
+						<a href="MIBAC/index.html"><img src="thumbs/thumb-mibac.jpg" /></a>
+						<h4>MIBAC 2017</h4>
+						<h5>December 2016</h5>
+						<p>I made this for an event at my school.</p>
+					</div>
+					<div class="col-md-4 portfolio-item">
+						<a href="graffiti/index.html"><img src="thumbs/thumb-graffiti.jpg" /></a>
+						<h4>LGS Graffiti 2017</h4>
+						<h5>February 2017</h5>
+						<p>I made this website for a private event.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 portfolio-item">
+						<a href="quicktaxi/index.html"><img src="thumbs/thumb-quicktaxi.jpg" /></a>
+						<h4>Quicktaxi</h4>
+						<h5>February 2019</h5>
+						<p>I made this website for a friend who just needed a rough layout.</p>
+					</div>
+					<div class="col-md-4 portfolio-item">
+						<a href="chaudhry/index.html"><img src="thumbs/thumb-chaudhry.jpg" /></a>
+						<h4>Chaudhry Motors</h4>
+						<h5>May 2019</h5>
+						<p>This was my end-of-semester project for Web Engineering in Spring 2019.</p>
+					</div>
+				</div>
+				<h3 style="margin-top: 2em">Mobile Apps</h3>
+				<div class="row" style="margin-top: 1em">
+					<div class="col-md-4 portfolio-item">
+						<a id="document-scanner-modal-trigger"><img style="cursor: pointer"
+								src="thumbs/thumb-scanner-app.jpg" /></a>
+						<h4>Document Scanner</h4>
+						<h5>December 2021</h5>
+						<p>I worked with a team to develop this app for a client in Germany. This was my first project
+							in React Native, so I had to learn everything on the fly. It was very stressful but
+							rewarding.</p>
+						<p>This app works like CamScanner. You use it to take a photo of a document, and then it
+							automatically detects the document's borders, crops the image, and applies some thresholding
+							techniques to generate a black and white image that resembles something you would obtain by
+							scanning the document in an actual scanner.</p>
+						<p>Our initial plan was to use <tt><a
+									href="https://www.npmjs.com/package/react-native-opencv3">react-native-open-cv3</a></tt>
+							for image processing, but its performance was too slow, so we ended up creating a Python
+							script that did all the image processing and hosted it on a server. The mobile app sends the
+							captured photo to this server and receives the scanned result, which it then stores in a PDF
+							file.</p>
+					</div>
+				</div>
+				<h3 style="margin-top: 2em">Other Goodies</h3>
+				<div class="row" style="margin-top: 1em">
+					<div class="col-md-4 portfolio-item">
+						<a href="scripts/highlights.py"><img src="thumbs/thumb-kindle-script.jpg" /></a>
+						<h4>Kindle Highlights HTML Generator</h4>
+						<h5>December 2019</h5>
+						<p>I own a Kindle Paperwhite and one of the best things about it is how it conveniently stores
+							all your highlighted passages in a single .txt file. The problem is, reading .txt files can
+							sometimes be a headache, so I wrote this Python script that converts the .txt file into a
+							simple but neatly formatted HTML file with bulleted lists.</p>
+						<p>I'm sure Kindle users can relate to this: sometimes while trying to highlight a passage we
+							accidentally end up highlighting more (or less) than the actual passage and have to undo our
+							highlight and try again. These accidental highlights, though, also get added to the .txt
+							file, which can thus contain a lot of duplicate entries. To remove these duplicate entries
+							from the HTML file generated, I used the SequenceMatcher class in Python's difflib library,
+							which ignores highlighted passages that have a similary index of more than 50%.</p>
+						<p>Usage: copy your <tt>'My Clippings.txt'</tt> from your Kindle and place it in the same
+							directory as this script. Then, run it. The result will be stored in a file named
+							<tt>'highlights.html'</tt></p>
+					</div>
+				</div>
+				<h3 style="margin-top: 2em">If I claim to be a web developer, why is this website so basic?</h3>
+				<p>It's because I designed it in a hurry so I could have at least something to present to potential clients and employers.</p>
+				<p>I plan on revamping it but I don't get enough free time.</p>
+				<p>If you have any ideas for designs or any portfolio websites that I should look at for inspiration, do reach out to me!</p>
 			</div>
 		</div>
+	</div>
 
-		<footer>
-			<h4>For work, drop me an email at talha936@live.com</h4>
-		</footer>
-		
-		<!-- Custom Styling Scripts -->
-		<script>
-			// Full-height section
-			$('#section-intro').height($(window).height());
+	<!-- Modal For Document Scanner App Gallery -->
+	<div class="modal fade" id="document-scanner-modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title"><strong>Document Scanner Screenshots</strong></h5>
+				</div>
+				<div class="modal-body">
+					<div class="row document-scanner-screenshots">
+						<div class="col-md-6">
+							<a href="document-scanner-screenshots/screenshot1.jpg"><img class="screenshot" src="document-scanner-screenshots/screenshot1.jpg" /></a>
+						</div>
+						<div class="col-md-6">
+							<a href="document-scanner-screenshots/screenshot2.jpg"><img class="screenshot" src="document-scanner-screenshots/screenshot2.jpg" /></a>
+						</div>
+					</div>
+					<div class="row document-scanner-screenshots">
+						<div class="col-md-6">
+							<a href="document-scanner-screenshots/screenshot3.jpg"><img class="screenshot" src="document-scanner-screenshots/screenshot3.jpg" /></a>
+						</div>
+						<div class="col-md-6">
+							<a href="document-scanner-screenshots/screenshot4.jpg"><img class="screenshot" src="document-scanner-screenshots/screenshot4.jpg" /></a>
+						</div>
+					</div>
+					<div class="row document-scanner-screenshots">
+						<div class="col-md-6">
+							<a href="document-scanner-screenshots/screenshot5.jpg"><img class="screenshot" src="document-scanner-screenshots/screenshot5.jpg" /></a>
+						</div>
+						<div class="col-md-6">
+							<a href="document-scanner-screenshots/screenshot6.jpg"><img class="screenshot" src="document-scanner-screenshots/screenshot6.jpg" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-			// Vertically center the contents of the intro section
-			var introHeight = $('#section-intro').height();
-			var introDivHeight = $('#section-intro > div').height();
-			var topPos = (introHeight - introDivHeight) / 2;
-			$('#section-intro > div').css('top', topPos + 'px');
+	<!-- Page Footer -->
+	<footer>
+		<h4>For work, drop me an email at talha936@live.com</h4>
+	</footer>
 
-			// Hide animated elements
-			$('#section-intro h1').hide();
-			$('#section-intro h2').hide();
-			$('#section-intro i.fa').hide();
+	<!-- Custom Styling Scripts -->
+	<script>
+		// Full-height section
+		$('#section-intro').height($(window).height());
+
+		// Vertically center the contents of the intro section
+		var introHeight = $('#section-intro').height();
+		var introDivHeight = $('#section-intro > div').height();
+		var topPos = (introHeight - introDivHeight) / 2;
+		$('#section-intro > div').css('top', topPos + 'px');
+
+		// Hide animated elements
+		$('#section-intro h1').hide();
+		$('#section-intro h2').hide();
+		$('#section-intro i.fa').hide();
 
 
-			// Custom function for animating each individual character in a string of text
-			function animatedEntry(element) {
-				let chars = $(element).text().split('').map(function(x) {return '<span>' + x + '</span>'});
-				$(element).html(chars.join(''));
-				$(element + ' span').hide();
-				$(element).show();
-				let items = $(element + ' span').length;
-				let i = 0;
-				let interval = setInterval(function() {
-					$(element + ' span').eq(i).fadeIn();
-					i++;
-					if (i == items) {
-						clearInterval(interval);
-						setTimeout(function() {
-							$('#section-intro h2').slideToggle();
-								setTimeout(function() {
-								$('#section-intro i.fa').fadeToggle();
-								}, 500);
-						}, 1000);
-					}
-				},100);
-				
-			}
+		// Custom function for animating each individual character in a string of text
+		function animatedEntry(element) {
+			let chars = $(element).text().split('').map(function (x) { return '<span>' + x + '</span>' });
+			$(element).html(chars.join(''));
+			$(element + ' span').hide();
+			$(element).show();
+			let items = $(element + ' span').length;
+			let i = 0;
+			let interval = setInterval(function () {
+				$(element + ' span').eq(i).fadeIn();
+				i++;
+				if (i == items) {
+					clearInterval(interval);
+					setTimeout(function () {
+						$('#section-intro h2').slideToggle();
+						setTimeout(function () {
+							$('#section-intro i.fa').fadeToggle();
+						}, 500);
+					}, 1000);
+				}
+			}, 100);
 
-			// Scroll down when the user clicks on the down arrow
-			$("#section-intro i.fa").click(function() {
-			    $('html, body').animate({
-			        scrollTop: $("#content").offset().top
-			    }, 1000);
-			});
+		}
 
-			$(function() {
-				animatedEntry('#section-intro h1');
-			})
-		</script>
-	</body>
+		// Scroll down when the user clicks on the down arrow
+		$("#section-intro i.fa").click(function () {
+			$('html, body').animate({
+				scrollTop: $("#content").offset().top
+			}, 1000);
+		});
+
+		$(function () {
+			animatedEntry('#section-intro h1');
+		})
+
+		// Document Scanner Gallery Modal
+		$('#document-scanner-modal-trigger').click(function () {
+			$('#document-scanner-modal').modal();
+		});
+	</script>
+</body>
+
 </html>
