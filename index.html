@@ -108,11 +108,45 @@
 		<div class="container" id="content">
 			<div class="row">
 				<div class="col">
-					<h3>Here are some websites I've designed</h3>
+					<h3>Here are some websites I've designed/developed</h3>
 					<p>These do not include Wordpress websites because Github Pages only allows me to upload static HTML websites.</p>
 					<p>All of these websites were designed from scratch using HTML/CSS/Javascript/PHP. Occasionally, some Javascript libraries were used for animations and slideshows.</p>
 					<p>Some functionalities had to be removed while uploading these websites as Github Pages does not recognise PHP code.</p>
-					<div class="row" style="margin-top: 2em">
+					<div class="row">
+						<div class="col">
+							<h3 style="margin-top: 2em">Active Websites</h3>
+							<div class="row" style="margin-top: 2em">
+								<div class="col-md-4 portfolio-item">
+									<a href="https://codefest.io/"><img src="thumbs/thumb-codefest.jpg" /></a>
+									<h4>Code Fest</h4>
+									<h5>October 2021</h5>
+									<p>This is a coding platform that I worked on while employed at <a href="https://pk.linkedin.com/company/thegapdynamics">Gap Dynamics GmbH.</a> I built this with Next.js, a popular React framework.</p>
+								</div>
+								<div class="col-md-4 portfolio-item">
+									<a href="https://dgtlnetwork.com/"><img src="thumbs/thumb-dgtl.jpg" /></a>
+									<h4>DGTL Network</h4>
+									<h5>January 2022</h5>
+									<p>A website for a digital marketing agency. I built this in Wordpress.</p>
+								</div>
+								<div class="col-md-4 portfolio-item">
+									<a href="https://hms.gap-dynamics.com/"><img src="thumbs/thumb-hms.jpg" /></a>
+									<h4>Elite Hospital Sohar</h4>
+									<h5>January 2022</h5>
+									<p>A website for a hospital in Oman that allows visitors to book appointments online. This was built in Wordpress.</p>
+								</div>
+							</div>
+							<div class="row" style="margin-top: 2em">
+								<div class="col-md-4 portfolio-item">
+									<a href="https://hanifmedical.com/"><img src="thumbs/thumb-hanif.jpg" /></a>
+									<h4>Hanif Medical Complex</h4>
+									<h5>November 2020</h5>
+									<p>A relatively simple website for a hospital in Pakistan, built in Wordpress.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h3 style="margin-top: 2em">Inactive Websites</h3>
+					<div class="row" style="margin-top: 1em">
 						<div class="col-md-4 portfolio-item">
 							<a href="BMIDC/index.html"><img src="thumbs/thumb-bmidc.jpg" /></a>
 							<h4>BMIDC 2015</h4>
@@ -147,17 +181,15 @@
 							<p>This was my end-of-semester project for Web Engineering in Spring 2019.</p>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<h3>Active Websites</h3>
-					<div class="row" style="margin-top: 2em">
+					<h3 style="margin-top: 2em">Other Goodies</h3>
+					<div class="row" style="margin-top: 1em">
 						<div class="col-md-4 portfolio-item">
-							<a href="https://codefest.io/"><img src="thumbs/thumb-codefest.jpg" /></a>
-							<h4>Code Fest</h4>
-							<h5>October 2021</h5>
-							<p>This is a coding platform that I worked on while employed at <a href="https://pk.linkedin.com/company/thegapdynamics">Gap Dynamics GmbH.</a> This is built with Next.js, a popular React framework.</p>
+							<a href="scripts/highlights.py"><img src="thumbs/thumb-kindle-script.jpg" /></a>
+							<h4>Kindle Highlights HTML Generator</h4>
+							<h5>December 2019</h5>
+							<p>I own a Kindle Paperwhite and one of the best things about it is how it conveniently stores all your highlighted passages in a single .txt file. The problem is, reading .txt files can sometimes be a headache, so I wrote this Python script that converts the .txt file into a simple but neatly formatted HTML file with bulleted lists.</p>
+							<p>I'm sure Kindle users can relate to this: sometimes while trying to highlight a passage we accidentally end up highlighting more (or less) than the actual passage and have to undo our highlight and try again. These accidental highlights, though, also get added to the .txt file, which can thus contain a lot of duplicate entries. To remove these duplicate entries from the HTML file generated, I used the SequenceMatcher class in Python's difflib library, which ignores highlighted passages that have a similary index of more than 50%.</p>
+							<p>Usage: copy your <tt>'My Clippings.txt'</tt> from your Kindle and place it in the same directory as this script. Then, run it. The result will be stored in a file named <tt>'highlights.html'</tt></p>
 						</div>
 					</div>
 				</div>
